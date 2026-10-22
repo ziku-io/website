@@ -22,13 +22,11 @@ body {
 a { color: inherit; text-decoration: none; }
 .wrap { max-width: 960px; margin: 0 auto; padding: 0 24px; }
 
-header {
-  display: flex; justify-content: center;
-  padding: 112px 0 8px;
-}
+header { display: flex; justify-content: center; padding: 112px 0 8px; }
+.brand { display: inline-block; }
 .brand img { width: 140px; height: 140px; display: block; }
 
-.hero { padding: 88px 0 72px; }
+.hero { padding: 88px 0 120px; }
 .pill {
   display: inline-block; font-size: 13px; color: var(--blue);
   border: 1px solid var(--line); border-radius: 999px; padding: 5px 13px; margin-bottom: 26px;
@@ -36,10 +34,10 @@ header {
 }
 h1 {
   font-size: clamp(38px, 7vw, 64px); line-height: 1.05; letter-spacing: -.035em;
-  margin: 0 0 22px; font-weight: 800;
+  margin: 0 auto 22px; padding: 0 .08em .08em; font-weight: 800; text-align: center;
 }
 h1 .grad { background: linear-gradient(120deg, var(--cyan), var(--blue)); -webkit-background-clip: text; background-clip: text; color: transparent; }
-.lede { font-size: clamp(17px, 2.4vw, 21px); color: var(--muted); max-width: 620px; margin: 0 0 34px; }
+.lede { font-size: clamp(17px, 2.4vw, 21px); color: var(--muted); max-width: 620px; margin: 0 auto; text-align: center; }
 .cta { display: inline-flex; gap: 12px; flex-wrap: wrap; }
 .btn {
   display: inline-block; padding: 13px 22px; border-radius: 11px; font-weight: 600; font-size: 15px;
@@ -50,13 +48,13 @@ h1 .grad { background: linear-gradient(120deg, var(--cyan), var(--blue)); -webki
 .btn.ghost { background: var(--card); color: var(--fg); border: 1px solid var(--line); box-shadow: none; }
 .btn:hover { transform: translateY(-1px); }
 
-.focus { padding: 36px 0 64px; display: grid; gap: 20px; grid-template-columns: repeat(4, 1fr); }
+.focus { padding: 8px 0 64px; display: grid; gap: 20px; grid-template-columns: repeat(3, 1fr); }
 @media (max-width: 900px) { .focus { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 520px) { .focus { grid-template-columns: 1fr; } }
 .card {
   background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 26px;
 }
-.card .ic { font-size: 24px; margin-bottom: 12px; }
+.card > i { display: block; color: var(--blue); font-size: 24px; line-height: 1; margin: 0 auto 16px; width: fit-content; }
 .card h3 { margin: 0 0 8px; font-size: 18px; letter-spacing: -.01em; }
 .card p { margin: 0; color: var(--muted); font-size: 15px; }
 
